@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671FC54C2C4B99D400CE8908 /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 671FC54A2C4B99D400CE8908 /* help.cpp */; };
 		676A2A2A2C3D7CB200C707C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 676A2A292C3D7CB200C707C5 /* main.cpp */; };
 		676A2A322C3D7D1700C707C5 /* vignere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 676A2A302C3D7D1700C707C5 /* vignere.cpp */; };
+		67BA44E02C6688000022F73C /* railfence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BA44DE2C6688000022F73C /* railfence.cpp */; };
+		67BA44E32C672FA20022F73C /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67BA44E12C672FA20022F73C /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		671FC54A2C4B99D400CE8908 /* help.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = help.cpp; sourceTree = "<group>"; };
+		671FC54B2C4B99D400CE8908 /* help.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = help.hpp; sourceTree = "<group>"; };
 		676A2A262C3D7CB200C707C5 /* FEDS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FEDS; sourceTree = BUILT_PRODUCTS_DIR; };
 		676A2A292C3D7CB200C707C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		676A2A302C3D7D1700C707C5 /* vignere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vignere.cpp; sourceTree = "<group>"; };
-		676A2A312C3D7D1700C707C5 /* vignere.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vignere.hpp; sourceTree = "<group>"; };
+		67BA44DE2C6688000022F73C /* railfence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = railfence.cpp; sourceTree = "<group>"; };
+		67BA44DF2C6688000022F73C /* railfence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = railfence.hpp; sourceTree = "<group>"; };
+		67BA44E12C672FA20022F73C /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		67BA44E22C672FA20022F73C /* test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
+		67BA44E42C68A8860022F73C /* vignere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vignere.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,13 @@
 		676A2A1D2C3D7CB200C707C5 = {
 			isa = PBXGroup;
 			children = (
+				67BA44E42C68A8860022F73C /* vignere.h */,
+				67BA44E12C672FA20022F73C /* test.cpp */,
+				67BA44E22C672FA20022F73C /* test.hpp */,
+				67BA44DE2C6688000022F73C /* railfence.cpp */,
+				67BA44DF2C6688000022F73C /* railfence.hpp */,
+				671FC54A2C4B99D400CE8908 /* help.cpp */,
+				671FC54B2C4B99D400CE8908 /* help.hpp */,
 				676A2A282C3D7CB200C707C5 /* FEDS */,
 				676A2A272C3D7CB200C707C5 /* Products */,
 			);
@@ -62,7 +78,6 @@
 			children = (
 				676A2A292C3D7CB200C707C5 /* main.cpp */,
 				676A2A302C3D7D1700C707C5 /* vignere.cpp */,
-				676A2A312C3D7D1700C707C5 /* vignere.hpp */,
 			);
 			path = FEDS;
 			sourceTree = "<group>";
@@ -126,6 +141,9 @@
 			files = (
 				676A2A322C3D7D1700C707C5 /* vignere.cpp in Sources */,
 				676A2A2A2C3D7CB200C707C5 /* main.cpp in Sources */,
+				671FC54C2C4B99D400CE8908 /* help.cpp in Sources */,
+				67BA44E32C672FA20022F73C /* test.cpp in Sources */,
+				67BA44E02C6688000022F73C /* railfence.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
