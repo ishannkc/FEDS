@@ -28,10 +28,11 @@ public:
     QSplitter *splitter;
     QRadioButton *substitutionRadioButton;
     QRadioButton *transpositionRadioButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
-    QPushButton *backButton;
     QPushButton *nextButton;
+    QPushButton *backButton;
+    QPushButton *cancelButton;
 
     void setupUi(QDialog *secondDialog)
     {
@@ -54,21 +55,26 @@ public:
         transpositionRadioButton = new QRadioButton(splitter);
         transpositionRadioButton->setObjectName("transpositionRadioButton");
         splitter->addWidget(transpositionRadioButton);
-        widget = new QWidget(secondDialog);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(340, 300, 251, 41));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(secondDialog);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(270, 280, 321, 61));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        backButton = new QPushButton(widget);
+        nextButton = new QPushButton(layoutWidget);
+        nextButton->setObjectName("nextButton");
+
+        horizontalLayout->addWidget(nextButton);
+
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName("backButton");
 
         horizontalLayout->addWidget(backButton);
 
-        nextButton = new QPushButton(widget);
-        nextButton->setObjectName("nextButton");
+        cancelButton = new QPushButton(layoutWidget);
+        cancelButton->setObjectName("cancelButton");
 
-        horizontalLayout->addWidget(nextButton);
+        horizontalLayout->addWidget(cancelButton);
 
 
         retranslateUi(secondDialog);
@@ -82,8 +88,9 @@ public:
         label->setText(QCoreApplication::translate("secondDialog", "<html><head/><body><p><span style=\" font-size:36pt; font-weight:700;\">Select Methods</span></p></body></html>", nullptr));
         substitutionRadioButton->setText(QCoreApplication::translate("secondDialog", "Substitution(Vignere)", nullptr));
         transpositionRadioButton->setText(QCoreApplication::translate("secondDialog", "Transposition", nullptr));
-        backButton->setText(QCoreApplication::translate("secondDialog", "Back", nullptr));
         nextButton->setText(QCoreApplication::translate("secondDialog", "Next", nullptr));
+        backButton->setText(QCoreApplication::translate("secondDialog", "Back", nullptr));
+        cancelButton->setText(QCoreApplication::translate("secondDialog", "Cancel", nullptr));
     } // retranslateUi
 
 };
