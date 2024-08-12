@@ -1,0 +1,11 @@
+release/confirmationdialog.o
+release/main.o
+release/mainwindow.o
+release/methodselectiondialog.o
+release/substitutiondialog.o
+release/transposition.o
+release/moc_confirmationdialog.o
+release/moc_mainwindow.o
+release/moc_methodselectiondialog.o
+release/moc_substitutiondialog.o
+release/moc_transposition.o
